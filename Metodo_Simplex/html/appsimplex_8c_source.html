@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto Metodo Simplex: Fichero Fuente appsimplex.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Proyecto Metodo Simplex
+   </div>
+   <div id="projectbrief">Programa Metodo Simplex</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">appsimplex.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="appsimplex_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_metodo_simplex_8h.html">MetodoSimplex.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="appsimplex_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    9</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="appsimplex_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">int</span> op=1;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">do</span>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    printf (<span class="stringliteral">&quot;\n\t**METODO SIMPLEX***\n&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    printf (<span class="stringliteral">&quot;\nIngrese el numero de funciones: &quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    scanf (<span class="stringliteral">&quot;%d&quot;</span>,&amp;<a class="code" href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    fflush(stdin);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    printf (<span class="stringliteral">&quot;\nIngrese el numero de variables: &quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    scanf (<span class="stringliteral">&quot;%d&quot;</span>,&amp;<a class="code" href="_metodo_simplex_8h.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    fflush(stdin);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    printf (<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>=<a class="code" href="_metodo_simplex_8h.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>+<a class="code" href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a>+1;<span class="comment">//sumo funciones y variables para hacer las columnas necesarias y agrego las restricciones</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="cuerpo_simplex_8c.html#a138b5c4caf558c423c9fdff1fd5f4cb6">pedirdatos</a>(<a class="code" href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a>,<a class="code" href="_metodo_simplex_8h.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>);<span class="comment">//rellena la matriz</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="cuerpo_simplex_8c.html#af113bada0a9b6bd4dbfab3216b3de44e">matrix</a>(<a class="code" href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a>,<a class="code" href="_metodo_simplex_8h.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>,<a class="code" href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a>,<a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>);<span class="comment">//imprime la matriz</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="cuerpo_simplex_8c.html#abd9126cd254fa065116813554f6bbc92">posicion</a>(<a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>,<a class="code" href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    printf (<span class="stringliteral">&quot;\n\tLa columna privote es: X%d&quot;</span>,<a class="code" href="_metodo_simplex_8h.html#a1910d262855b71da353ed0d07a6c7823">pos</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    printf (<span class="stringliteral">&quot;\nA continuacion se divide la columna privote entre los coheficientes de restriccion\n &quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="cuerpo_simplex_8c.html#a558c6f7653c15a5f5ca750a706346e61">operaciones</a>(<a class="code" href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a>, <a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="cuerpo_simplex_8c.html#a5b350541f5aa9edff85674b757ffbd48">iteracionfila</a>(<a class="code" href="_metodo_simplex_8h.html#a363774778a5ad0ef78e6e4ca79a3bc11">pos1</a>, <a class="code" href="_metodo_simplex_8h.html#a1910d262855b71da353ed0d07a6c7823">pos</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="cuerpo_simplex_8c.html#af113bada0a9b6bd4dbfab3216b3de44e">matrix</a>(<a class="code" href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a>,<a class="code" href="_metodo_simplex_8h.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>,<a class="code" href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a>,<a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> a=1;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">while</span> (a==1)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">int</span> b=0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="_metodo_simplex_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>=1; <a class="code" href="_metodo_simplex_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;=<a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>; <a class="code" href="_metodo_simplex_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>++)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a>[<a class="code" href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a>+1][<a class="code" href="_metodo_simplex_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]&gt;=0)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                b++;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;               <span class="keywordflow">if</span>  (b==<a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;               {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                   a=2;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                   printf (<span class="stringliteral">&quot;\n\t &lt;--------------Esta es la solucion------------&gt;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                   <a class="code" href="cuerpo_simplex_8c.html#abd9126cd254fa065116813554f6bbc92">posicion</a>(<a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>, <a class="code" href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                   <a class="code" href="cuerpo_simplex_8c.html#af113bada0a9b6bd4dbfab3216b3de44e">matrix</a>(<a class="code" href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a>, <a class="code" href="_metodo_simplex_8h.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>, <a class="code" href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a>, <a class="code" href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;               }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;               <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;               {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  a=2;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                  printf (<span class="stringliteral">&quot;\n-----------Programa Finalizado---------\n\n&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;               }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            b=0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    printf (<span class="stringliteral">&quot;\nQuieres resolver otras ecuaciones [Si=1, No=0] : &quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    scanf (<span class="stringliteral">&quot;%i&quot;</span>,&amp;op);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">while</span> (op==1);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//return 0;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_metodo_simplex_8h_html_ac3de2acf5023dabf4b226ecbfb375e71"><div class="ttname"><a href="_metodo_simplex_8h.html#ac3de2acf5023dabf4b226ecbfb375e71">mc</a></div><div class="ttdeci">int mc</div><div class="ttdef"><b>Definition:</b> <a href="_metodo_simplex_8h_source.html#l00032">MetodoSimplex.h:32</a></div></div>
+<div class="ttc" id="a_metodo_simplex_8h_html_a4e1e0e72dd773439e333c84dd762a9c3"><div class="ttname"><a href="_metodo_simplex_8h.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></div><div class="ttdeci">int c</div><div class="ttdef"><b>Definition:</b> <a href="_metodo_simplex_8h_source.html#l00032">MetodoSimplex.h:32</a></div></div>
+<div class="ttc" id="a_metodo_simplex_8h_html_a363774778a5ad0ef78e6e4ca79a3bc11"><div class="ttname"><a href="_metodo_simplex_8h.html#a363774778a5ad0ef78e6e4ca79a3bc11">pos1</a></div><div class="ttdeci">int pos1</div><div class="ttdef"><b>Definition:</b> <a href="_metodo_simplex_8h_source.html#l00032">MetodoSimplex.h:32</a></div></div>
+<div class="ttc" id="a_metodo_simplex_8h_html_acab531abaa74a7e664e3986f2522b33a"><div class="ttname"><a href="_metodo_simplex_8h.html#acab531abaa74a7e664e3986f2522b33a">r</a></div><div class="ttdeci">int r</div><div class="ttdef"><b>Definition:</b> <a href="_metodo_simplex_8h_source.html#l00032">MetodoSimplex.h:32</a></div></div>
+<div class="ttc" id="acuerpo_simplex_8c_html_a138b5c4caf558c423c9fdff1fd5f4cb6"><div class="ttname"><a href="cuerpo_simplex_8c.html#a138b5c4caf558c423c9fdff1fd5f4cb6">pedirdatos</a></div><div class="ttdeci">void pedirdatos(int r, int c)</div><div class="ttdoc">funcion que para pedir los valores</div><div class="ttdef"><b>Definition:</b> <a href="cuerpo_simplex_8c_source.html#l00045">cuerpoSimplex.c:45</a></div></div>
+<div class="ttc" id="acuerpo_simplex_8c_html_a558c6f7653c15a5f5ca750a706346e61"><div class="ttname"><a href="cuerpo_simplex_8c.html#a558c6f7653c15a5f5ca750a706346e61">operaciones</a></div><div class="ttdeci">void operaciones(float matriz[100][100], int mc)</div><div class="ttdoc">funcion que realiza las operaciones de la fila</div><div class="ttdef"><b>Definition:</b> <a href="cuerpo_simplex_8c_source.html#l00103">cuerpoSimplex.c:103</a></div></div>
+<div class="ttc" id="a_metodo_simplex_8h_html_a11cdb899f1177483e41003022ccd861d"><div class="ttname"><a href="_metodo_simplex_8h.html#a11cdb899f1177483e41003022ccd861d">matriz</a></div><div class="ttdeci">float matriz[100][100]</div><div class="ttdoc">variables de arreglos para la fommacion de la tabla simplex</div><div class="ttdef"><b>Definition:</b> <a href="_metodo_simplex_8h_source.html#l00020">MetodoSimplex.h:20</a></div></div>
+<div class="ttc" id="a_metodo_simplex_8h_html"><div class="ttname"><a href="_metodo_simplex_8h.html">MetodoSimplex.h</a></div><div class="ttdoc">Cabecera del prototipo de funciones.</div></div>
+<div class="ttc" id="acuerpo_simplex_8c_html_a5b350541f5aa9edff85674b757ffbd48"><div class="ttname"><a href="cuerpo_simplex_8c.html#a5b350541f5aa9edff85674b757ffbd48">iteracionfila</a></div><div class="ttdeci">void iteracionfila(int pos1, int pos2)</div><div class="ttdoc">funcion para obtener los nuevos valores de la fila privote</div><div class="ttdef"><b>Definition:</b> <a href="cuerpo_simplex_8c_source.html#l00134">cuerpoSimplex.c:134</a></div></div>
+<div class="ttc" id="acuerpo_simplex_8c_html_af113bada0a9b6bd4dbfab3216b3de44e"><div class="ttname"><a href="cuerpo_simplex_8c.html#af113bada0a9b6bd4dbfab3216b3de44e">matrix</a></div><div class="ttdeci">void matrix(int r, int c, float matriz[100][100], int mc)</div><div class="ttdoc">funcion para la impresion de los valores en la matriz</div><div class="ttdef"><b>Definition:</b> <a href="cuerpo_simplex_8c_source.html#l00007">cuerpoSimplex.c:7</a></div></div>
+<div class="ttc" id="aappsimplex_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="appsimplex_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="appsimplex_8c_source.html#l00009">appsimplex.c:9</a></div></div>
+<div class="ttc" id="a_metodo_simplex_8h_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="_metodo_simplex_8h.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> <a href="_metodo_simplex_8h_source.html#l00032">MetodoSimplex.h:32</a></div></div>
+<div class="ttc" id="a_metodo_simplex_8h_html_a1910d262855b71da353ed0d07a6c7823"><div class="ttname"><a href="_metodo_simplex_8h.html#a1910d262855b71da353ed0d07a6c7823">pos</a></div><div class="ttdeci">int pos</div><div class="ttdef"><b>Definition:</b> <a href="_metodo_simplex_8h_source.html#l00032">MetodoSimplex.h:32</a></div></div>
+<div class="ttc" id="acuerpo_simplex_8c_html_abd9126cd254fa065116813554f6bbc92"><div class="ttname"><a href="cuerpo_simplex_8c.html#abd9126cd254fa065116813554f6bbc92">posicion</a></div><div class="ttdeci">void posicion(int mc, float matriz[100][100])</div><div class="ttdoc">funcion para localizar la posicion de la columna privote</div><div class="ttdef"><b>Definition:</b> <a href="cuerpo_simplex_8c_source.html#l00172">cuerpoSimplex.c:172</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

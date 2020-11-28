@@ -1,0 +1,18 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="iteracionfila",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuerpo_simplex_8c.html#a5b350541f5aa9edff85674b757ffbd48",tooltip="funcion para obtener los nuevos valores de la fila privote"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuerpo_simplex_8c.html#af113bada0a9b6bd4dbfab3216b3de44e",tooltip="funcion para la impresion de los valores en la matriz"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="operaciones",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuerpo_simplex_8c.html#a558c6f7653c15a5f5ca750a706346e61",tooltip="funcion que realiza las operaciones de la fila"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="pedirdatos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuerpo_simplex_8c.html#a138b5c4caf558c423c9fdff1fd5f4cb6",tooltip="funcion que para pedir los valores"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="posicion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cuerpo_simplex_8c.html#abd9126cd254fa065116813554f6bbc92",tooltip="funcion para localizar la posicion de la columna privote"];
+}

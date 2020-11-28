@@ -1,0 +1,14 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="funcion principal"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="buscarcamino",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cabecera_grafo_8h.html#a087943779dcb4922d56d19db739cf713",tooltip="funcion para hacer la busqueda del camino de un grafo"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="coordenadas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cabecera_grafo_8h.html#a36afac85c6f9fbaf41fe84807a9ba184",tooltip="funcion para colocar cada una de las coordenadas del grafo en la la matriz"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_cabecera_grafo_8h.html#ac7550fea6e067fa62905ad941543e771",tooltip="funcion para crear la matriz inicial"];
+}

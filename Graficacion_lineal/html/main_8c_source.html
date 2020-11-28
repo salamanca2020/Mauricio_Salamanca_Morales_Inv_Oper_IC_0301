@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mi proyecto grafica: Fichero Fuente main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mi proyecto grafica
+   </div>
+   <div id="projectbrief">Graficas lineales con Gnuplot</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="grafica___h_8h.html">grafica_H.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   12</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> op=0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">do</span>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        system(<span class="stringliteral">&quot;cls&quot;</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    printf (<span class="stringliteral">&quot;\t\tGraficando ecuaciones lineales&quot;</span>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    printf (<span class="stringliteral">&quot;\n\nIngrese el rango de la funcion &quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    printf (<span class="stringliteral">&quot;\nRango inicial:&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    scanf(<span class="stringliteral">&quot;%i&quot;</span>,&amp;<a class="code" href="grafica___h_8h.html#af5e580602d23ab791f95c0d70a5e8be7">r1</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    printf (<span class="stringliteral">&quot;\nRango final:&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    scanf (<span class="stringliteral">&quot;%i&quot;</span>,&amp;<a class="code" href="grafica___h_8h.html#a509ffeb9d1f16c38da3dd6b47ee0c47e">r2</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    printf (<span class="stringliteral">&quot;\nDame el valor de m:&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    scanf (<span class="stringliteral">&quot;%i&quot;</span>,&amp;<a class="code" href="grafica___h_8h.html#a742204794ea328ba293fe59cec79b990">m</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    printf (<span class="stringliteral">&quot;\nDame el valor de b:&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    scanf (<span class="stringliteral">&quot;%i&quot;</span>,&amp;<a class="code" href="grafica___h_8h.html#a148e3876077787926724625411d6e7a9">b</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    printf (<span class="stringliteral">&quot;\nla funcion es: y=%ix+%i&quot;</span>,<a class="code" href="grafica___h_8h.html#a742204794ea328ba293fe59cec79b990">m</a>,<a class="code" href="grafica___h_8h.html#a148e3876077787926724625411d6e7a9">b</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    printf (<span class="stringliteral">&quot;, con un rango de [%i:%i]&quot;</span>,<a class="code" href="grafica___h_8h.html#af5e580602d23ab791f95c0d70a5e8be7">r1</a>,<a class="code" href="grafica___h_8h.html#a509ffeb9d1f16c38da3dd6b47ee0c47e">r2</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="cuerpo__grafica_8c.html#ab6c1d07555a7749384bae319b12e0773">graficar</a>(<a class="code" href="grafica___h_8h.html#af5e580602d23ab791f95c0d70a5e8be7">r1</a>,<a class="code" href="grafica___h_8h.html#a509ffeb9d1f16c38da3dd6b47ee0c47e">r2</a>,<a class="code" href="grafica___h_8h.html#a742204794ea328ba293fe59cec79b990">m</a>,<a class="code" href="grafica___h_8h.html#a148e3876077787926724625411d6e7a9">b</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    printf (<span class="stringliteral">&quot;\nDecea hacer otra grafica lineal: Si=[1], No=[0]: &quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    scanf (<span class="stringliteral">&quot;%i&quot;</span>,&amp;op);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">while</span> (op==1);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agrafica___h_8h_html"><div class="ttname"><a href="grafica___h_8h.html">grafica_H.h</a></div><div class="ttdoc">Esta es la cabecera del proyecto_grafica.</div></div>
+<div class="ttc" id="agrafica___h_8h_html_a509ffeb9d1f16c38da3dd6b47ee0c47e"><div class="ttname"><a href="grafica___h_8h.html#a509ffeb9d1f16c38da3dd6b47ee0c47e">r2</a></div><div class="ttdeci">int r2</div><div class="ttdef"><b>Definition:</b> <a href="grafica___h_8h_source.html#l00020">grafica_H.h:20</a></div></div>
+<div class="ttc" id="agrafica___h_8h_html_a742204794ea328ba293fe59cec79b990"><div class="ttname"><a href="grafica___h_8h.html#a742204794ea328ba293fe59cec79b990">m</a></div><div class="ttdeci">int m</div><div class="ttdef"><b>Definition:</b> <a href="grafica___h_8h_source.html#l00020">grafica_H.h:20</a></div></div>
+<div class="ttc" id="agrafica___h_8h_html_af5e580602d23ab791f95c0d70a5e8be7"><div class="ttname"><a href="grafica___h_8h.html#af5e580602d23ab791f95c0d70a5e8be7">r1</a></div><div class="ttdeci">int r1</div><div class="ttdef"><b>Definition:</b> <a href="grafica___h_8h_source.html#l00020">grafica_H.h:20</a></div></div>
+<div class="ttc" id="acuerpo__grafica_8c_html_ab6c1d07555a7749384bae319b12e0773"><div class="ttname"><a href="cuerpo__grafica_8c.html#ab6c1d07555a7749384bae319b12e0773">graficar</a></div><div class="ttdeci">void graficar(int r1, int r2, int m, int b)</div><div class="ttdoc">funcion a llamar para realizar la grafica con los comandos de gnuplot</div><div class="ttdef"><b>Definition:</b> <a href="cuerpo__grafica_8c_source.html#l00006">cuerpo_grafica.c:6</a></div></div>
+<div class="ttc" id="amain_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00012">main.c:12</a></div></div>
+<div class="ttc" id="agrafica___h_8h_html_a148e3876077787926724625411d6e7a9"><div class="ttname"><a href="grafica___h_8h.html#a148e3876077787926724625411d6e7a9">b</a></div><div class="ttdeci">int b</div><div class="ttdef"><b>Definition:</b> <a href="grafica___h_8h_source.html#l00020">grafica_H.h:20</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

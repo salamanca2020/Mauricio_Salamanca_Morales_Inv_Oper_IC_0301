@@ -1,5 +1,6 @@
 /**
-*@file Funciones 
+*@file Funciones.c
+*@brief Fichero de operacones y organizacion de la linea de espera
 */
 #include "head_queue.h"
 

@@ -1,5 +1,5 @@
 /**
-*@file head_queue
+*@file head_queue.h
 *@brief Esta es la cabecera que contiene el prototipo de funciones del programa
 *@par    logica de funciones 
 *        - ColaDeEspera Define la estructura y calculo de la cola de espera en un rango de horas

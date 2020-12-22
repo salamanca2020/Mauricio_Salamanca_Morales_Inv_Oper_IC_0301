@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mi Proyecto Linea de Espera: Fichero Fuente Funciones.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mi Proyecto Linea de Espera
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Funciones.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_funciones_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="head__queue_8h.html">head_queue.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="head__queue_8h.html#ad104667c1ff5432216294f04970f69a5">    7</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_funciones_8c.html#ad104667c1ff5432216294f04970f69a5">ColaDeEspera</a>(<span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[100], <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>, <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>, <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>[50], <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a>){</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="head__queue_8h.html#a848aadd29d2e02ae714c905eb8ee3d87">salida</a>=0;;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Horas\t\t&quot;</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>; <a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>++){</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i-%i&quot;</span>,<a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>,<a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>+1);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    printf (<span class="stringliteral">&quot;\n---------------------------------------------------------------------------------------------&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Llegada de clientes&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>; <a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>++){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i&quot;</span>,<a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[<a class="code" href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a>]);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Cajas abiertas\t&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>++){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i&quot;</span>,<a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Capacidad salidas&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>++){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i&quot;</span>,<a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]*<a class="code" href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Salidas clientes&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>;<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>++){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="head__queue_8h.html#a848aadd29d2e02ae714c905eb8ee3d87">salida</a>=<a class="code" href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a>*<a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i&quot;</span>,<a class="code" href="head__queue_8h.html#a848aadd29d2e02ae714c905eb8ee3d87">salida</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Cola de espera\t&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> espera;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> aux[50];<span class="comment">//arreglo para almacenar las salidas </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>++){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        aux[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]=(<a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>])-(<a class="code" href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a>*<a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        aux[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]=aux[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]+aux[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>-1];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i&quot;</span>,aux[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="head__queue_8h.html#ad9c9d380959f943c6177d3d7fcfe676d">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_funciones_8c.html#ad9c9d380959f943c6177d3d7fcfe676d">InOut</a>(<span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[100], <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>, <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>, <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>[50], <span class="keywordtype">int</span> <a class="code" href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a>){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    printf (<span class="stringliteral">&quot;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    printf (<span class="stringliteral">&quot;\n\t**Agregando Inputs y Outputs**\n&quot;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="_funciones_8c.html#ad104667c1ff5432216294f04970f69a5">ColaDeEspera</a>(<a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>,<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>,<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>,<a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>,<a class="code" href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a>);<span class="comment">//llamada de la funcion ColaDeEspera</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//entradas acumuladas </span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Input\t\t&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>++){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]=<a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]+<a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>-1];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i&quot;</span>,<a class="code" href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//salidas acumuladas</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    printf (<span class="stringliteral">&quot;\n\t|Output\t\t&quot;</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>=<a class="code" href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>&lt;=<a class="code" href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a>; <a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>++){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">int</span> out[50];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        out[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]=(<a class="code" href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a>*<a class="code" href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a>[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        out[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]=out[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]+out[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>-1];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        printf (<span class="stringliteral">&quot;\t|%i&quot;</span>,out[<a class="code" href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a>]);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ahead__queue_8h_html_acf9933ba9a016c4f3e65bfb6e6800af1"><div class="ttname"><a href="head__queue_8h.html#acf9933ba9a016c4f3e65bfb6e6800af1">cap</a></div><div class="ttdeci">int cap</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00022">head_queue.h:22</a></div></div>
+<div class="ttc" id="ahead__queue_8h_html_a48114a450690dc9aa683e7c20dc9d824"><div class="ttname"><a href="head__queue_8h.html#a48114a450690dc9aa683e7c20dc9d824">caja</a></div><div class="ttdeci">int caja[50]</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00022">head_queue.h:22</a></div></div>
+<div class="ttc" id="a_funciones_8c_html_ad9c9d380959f943c6177d3d7fcfe676d"><div class="ttname"><a href="_funciones_8c.html#ad9c9d380959f943c6177d3d7fcfe676d">InOut</a></div><div class="ttdeci">void InOut(int lg[100], int ini, int fin, int caja[50], int cap)</div><div class="ttdef"><b>Definition:</b> <a href="_funciones_8c_source.html#l00042">Funciones.c:42</a></div></div>
+<div class="ttc" id="ahead__queue_8h_html_a848aadd29d2e02ae714c905eb8ee3d87"><div class="ttname"><a href="head__queue_8h.html#a848aadd29d2e02ae714c905eb8ee3d87">salida</a></div><div class="ttdeci">int salida</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00028">head_queue.h:28</a></div></div>
+<div class="ttc" id="ahead__queue_8h_html_a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07"><div class="ttname"><a href="head__queue_8h.html#a4d2dfcf4c3fc3f31f6c2f5b7a93d6f07">ini</a></div><div class="ttdeci">int ini</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00028">head_queue.h:28</a></div></div>
+<div class="ttc" id="ahead__queue_8h_html_aa0ac97d0191be5cfe526548f77f433f4"><div class="ttname"><a href="head__queue_8h.html#aa0ac97d0191be5cfe526548f77f433f4">lg</a></div><div class="ttdeci">int lg[100]</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00022">head_queue.h:22</a></div></div>
+<div class="ttc" id="ahead__queue_8h_html_acb559820d9ca11295b4500f179ef6392"><div class="ttname"><a href="head__queue_8h.html#acb559820d9ca11295b4500f179ef6392">i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00022">head_queue.h:22</a></div></div>
+<div class="ttc" id="a_funciones_8c_html_ad104667c1ff5432216294f04970f69a5"><div class="ttname"><a href="_funciones_8c.html#ad104667c1ff5432216294f04970f69a5">ColaDeEspera</a></div><div class="ttdeci">void ColaDeEspera(int lg[100], int ini, int fin, int caja[50], int cap)</div><div class="ttdef"><b>Definition:</b> <a href="_funciones_8c_source.html#l00007">Funciones.c:7</a></div></div>
+<div class="ttc" id="ahead__queue_8h_html"><div class="ttname"><a href="head__queue_8h.html">head_queue.h</a></div><div class="ttdoc">Esta es la cabecera que contiene el prototipo de funciones del programa.</div></div>
+<div class="ttc" id="ahead__queue_8h_html_a37d972ae0b47b9099e30983131d31916"><div class="ttname"><a href="head__queue_8h.html#a37d972ae0b47b9099e30983131d31916">j</a></div><div class="ttdeci">int j</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00022">head_queue.h:22</a></div></div>
+<div class="ttc" id="ahead__queue_8h_html_a8674f1654f805920ac2f393ad449702c"><div class="ttname"><a href="head__queue_8h.html#a8674f1654f805920ac2f393ad449702c">fin</a></div><div class="ttdeci">int fin</div><div class="ttdef"><b>Definition:</b> <a href="head__queue_8h_source.html#l00028">head_queue.h:28</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

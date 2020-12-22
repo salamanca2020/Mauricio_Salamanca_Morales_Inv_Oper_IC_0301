@@ -1,6 +1,6 @@
 /**
-*@file MainLE 
-*@brief Este programa es un caso practico de las colas de espera con la problematica de un supermercado 
+*@file MainLE.c 
+*@brief Fichero principal del caso practico linea de espera
 *@par   logica del MainLE
 *       - Pedir rango de inicio y final 
 *       - Pedir datos de caja y cantidad de clientes 
